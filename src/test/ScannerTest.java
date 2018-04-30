@@ -1,5 +1,6 @@
 package test;
 
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class ScannerTest {
@@ -7,6 +8,7 @@ public class ScannerTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner read = new Scanner(System.in);
+		HashMap map = new HashMap();
 		int n = read.nextInt();
 		int[] nums = new int[n];
 		for(int i=0;i<n;i++) {
