@@ -1,33 +1,27 @@
 package offer;
 
+
+import java.util.LinkedList;
 import java.util.Stack;
 
 public class DoubleStack2Quenen {
 	
 	Stack<Integer> stack1 = new Stack<Integer>();
 	Stack<Integer> stack2 = new Stack<Integer>();
+	LinkedList<Integer> list = new LinkedList<Integer>();
 	
 	public void push(int node){
 		stack1.push(node);
 	}
 	
 	public int pop(){
-		int element=0;	
+		
 		while(!stack1.empty()){
-			int num = stack1.pop();
-			//System.out.print(num);
-			if(stack2.empty()){
-			stack2.push(num);
-			}else{
-				while(!stack2.empty()){
-					element=stack2.pop();
-				}
-				stack2.push(num);
-			}
-			//System.out.print(stack1.pop());
+			int num = stack1.remove(0);
+			list.add(num);
 		}
-		if(element==0){
-		element = stack2.pop();}
+		if(list.size()!=0){stack2.push(list.remove(0));}
+		int element = stack2.pop();
 		return element;
 	}
 
