@@ -36,7 +36,7 @@ class Solution {
     }
 }
 
-public class MainClass {
+public class removeNthFromEnd {
 	
     public static int[] stringToIntegerArray(String input) {
         input = input.trim();
