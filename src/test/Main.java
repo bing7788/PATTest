@@ -23,6 +23,14 @@ public class Main {
 		}
 		
 		//2.计算
+		int start0 = Integer.parseInt(startArray[0]);
+		int start1 = Integer.parseInt(startArray[1]);
+		
+		int stop0 = Integer.parseInt(stopArray[0]);
+		int stop1 = Integer.parseInt(stopArray[1]);
+		
+	
+		
 		
 		
 		
